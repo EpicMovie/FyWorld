@@ -10,13 +10,17 @@ using System.Collections.Generic;
 using Fy.Definitions;
 using System;
 
-namespace Fy.Characters.AI {
-	public enum TaskState {
+namespace Fy.Characters.AI 
+{
+	public enum TaskState 
+	{
 		Running,
 		Success,
 		Failed,
 	}
-	public enum TaskType {
+
+	public enum TaskType 
+	{
 		Idle,
 		Sleep,
 		Eat,
@@ -27,7 +31,8 @@ namespace Fy.Characters.AI {
 		Dirt
 	}
 
-	public class Task {
+	public class Task 
+	{
 		public TargetList targets;
 		public TaskState state;
 		public TaskDef def;
